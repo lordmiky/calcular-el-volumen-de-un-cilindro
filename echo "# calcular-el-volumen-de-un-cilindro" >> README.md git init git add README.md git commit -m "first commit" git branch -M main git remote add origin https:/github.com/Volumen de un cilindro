@@ -1,0 +1,30 @@
+//Miguel Antonio Ceron Hernandez
+//Programa para calcular el volumen de un cilindro
+
+#include<stdio.h>
+#include<math.h>
+
+int main(){
+	double r;//Valor del Radio
+	double h;//Valor de la altura
+	
+	printf("Digite el valor de la altura:");
+	scanf("%lf",&h);
+	
+	printf("Digite el valor del radio:");
+	scanf("%lf",&r);//Valor del radio
+	double p=2;//Valor para elevar al cuadrado
+	double r2 =pow(r, p);//Radio elevado al cuadrado
+	
+	
+	//Para sacar Ab(Area de la base)=PI X r^2
+	double ab=3.1416*r2;
+	
+	//V=Ab x h (Formula para sacar el Volumen del Cilindro
+	double V=(ab*h);
+	printf("El valor del volumen del cilindro es:%lf",V);
+
+
+	return 0;
+	
+}
